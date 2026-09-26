@@ -172,7 +172,7 @@ with tab3:
         except Exception:
             # Fallback simulated data if offline or API throttled
             data = {
-                "NAME": [f"STARLINK-{1000+i}" for i in range(15)] + [f"ISS (ZARYA)", "HUBBLE ST"],
+                "NAME": [f"STARLINK-{1000+i}" for i in range(15)] + ["ISS (ZARYA)", "HUBBLE ST"],
                 "NORAD_CAT_ID": list(range(25544, 25561)),
                 "INCLINATION": np.random.uniform(51.6, 98.2, 17),
                 "PERIOD": np.random.uniform(90, 100, 17),
